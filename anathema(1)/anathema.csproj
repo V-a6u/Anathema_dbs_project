@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4527C2A0-4BE6-4614-A677-032B6C76B0A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>anathema</RootNamespace>
+    <AssemblyName>anathema</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Bill.Designer.cs">
+      <DependentUpon>Customer_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Profile.Designer.cs">
+      <DependentUpon>Customer_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Register.Designer.cs">
+      <DependentUpon>Customer_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Home.Designer.cs">
+      <DependentUpon>Customer_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Transaction.Designer.cs">
+      <DependentUpon>Customer_Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Search.Designer.cs">
+      <DependentUpon>Book_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_Home.Designer.cs">
+      <DependentUpon>Emp_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_Order.designer.cs">
+      <DependentUpon>Emp_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journal_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal_Bill.Designer.cs">
+      <DependentUpon>Journal_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_Journal.designer.cs">
+      <DependentUpon>Order_Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Book.designer.cs">
+      <DependentUpon>Add_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Publisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Publisher.designer.cs">
+      <DependentUpon>Add_Publisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_Pub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_Pub.designer.cs">
+      <DependentUpon>delete_Pub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Customer.designer.cs">
+      <DependentUpon>View_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate_Rep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate_Rep.designer.cs">
+      <DependentUpon>Generate_Rep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_emp.designer.cs">
+      <DependentUpon>Add_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Emp.designer.cs">
+      <DependentUpon>Delete_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Result.Designer.cs">
+      <DependentUpon>Search_Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Customer_Bill.resx">
+      <DependentUpon>Customer_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Profile.resx">
+      <DependentUpon>Customer_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Register.resx">
+      <DependentUpon>Customer_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Home.resx">
+      <DependentUpon>Customer_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Transaction.resx">
+      <DependentUpon>Customer_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Search.resx">
+      <DependentUpon>Book_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_Home.resx">
+      <DependentUpon>Emp_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_Order.resx">
+      <DependentUpon>Emp_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal_Bill.resx">
+      <DependentUpon>Journal_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_Journal.resx">
+      <DependentUpon>Order_Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Book.resx">
+      <DependentUpon>Add_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Publisher.resx">
+      <DependentUpon>Add_Publisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_Pub.resx">
+      <DependentUpon>delete_Pub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Customer.resx">
+      <DependentUpon>View_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generate_Rep.resx">
+      <DependentUpon>Generate_Rep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_emp.resx">
+      <DependentUpon>Add_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Emp.resx">
+      <DependentUpon>Delete_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Result.resx">
+      <DependentUpon>Search_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
